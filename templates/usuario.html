@@ -47,7 +47,7 @@
 
 	<div class="container">
 		<div class="page-header">
-			<center> <h1>Datos {{DatoTest}}</h1>   </center>     
+			<center> <h1>Datos {{mascota}}</h1>   </center>     
 		</div>
 		<div class="CajaInicio animated bounceInRight">
 			<h1> <!--?php echo $titulo; ?-->titulo </h1>
@@ -56,8 +56,8 @@
 				<input type="text" name="apellido" ng-model="usuario.apellido" placeholder="ingrese apellido" value="" />
 				<span id="lblApellido" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*
 				</span>
-				<input type="text" name="nombre"  placeholder="ingrese nombre" value="" /> <span id="lblNombre" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
-				<input type="text" name="dni"  placeholder="ingrese dni" value=""     /> 
+				<input type="text" name="nombre"  ng-model="usuario.nombre" placeholder="ingrese nombre" value="" /> <span id="lblNombre" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
+				<input type="text" name="dni" ng-model="usuario.dni" placeholder="ingrese dni" value=""     /> 
 				<span id="lblDni" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
 				
 				

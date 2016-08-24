@@ -1,3 +1,4 @@
+// en la siguiente linea crearemos una variable de tipo aplicacion de angular llamada angularFirebase
 
 var app = angular.module('ABMangularPHP', []);
 
@@ -8,15 +9,18 @@ app.controller('controlMenu', function($scope, $http) {
 
 
 app.controller('controlAlta', function($scope, $http) {
-  $scope.DatoTest="**alta**";
+  $scope.DatoTest="**alta usuario**";
 
 //inicio las variables
   $scope.usuario={};
   $scope.usuario.nombre= "natalia" ;
  $scope.usuario.dni= "12312312" ;
-  $scope.usuario.apellido= "natalia" ;
+  $scope.usuario.apellido= "orlievsky" ;
   $scope.usuario.foto="sinfoto";
-
+ $scope.mascota={};
+ $scope.mascota.fechadenacimiento="24/08/2016";
+ $scope.mascota.sobrenombre="Pupi";
+ $scope.mascota.raza="Bull Terrier";
 
   $scope.Guardar=function(){
 
