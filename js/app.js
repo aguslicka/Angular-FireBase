@@ -23,12 +23,13 @@ app.controller('controlAlta', function($scope, $http) {
  $scope.mascota.raza="Bull Terrier";
 
   $scope.Guardar=function(){
-
+   
+   var messagesRef = new Firebase('https://altausuario-4a7b0.firebaseio.com/');
 
   	console.log("usuario a guardar:");
     console.log($scope.usuario);
      
-
+messagesRef.push($scope.usuario);
  }
 });
 
